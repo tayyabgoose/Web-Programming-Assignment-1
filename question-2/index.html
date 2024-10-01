@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <form action="" id="job-application-form">
+        <h1>Job Application Form</h1>
+        <h2>Full-Stack Web Developer</h2>
+        <div class="section">
+          <h3>Personal Information</h3>
+          <label for="first-name" id="first-name"
+            >First Name<input type="text"
+          /></label>
+          <label for="last-name" id="last-name"
+            >Last Name<input type="text"
+          /></label>
+          <label for="phone" id="phone"
+            >Phone<input type="phone" name="phone" id="phone"
+          /></label>
+          <label for="email" id="email"
+            >Email<input type="email" name="email" id="email"
+          /></label>
+          <label for="address"
+            >Address
+            <input type="text" name="street" id="street" placeholder="Street" />
+            <input type="text" name="city" id="city" placeholder="City" />
+            <input type="text" name="state" id="state" placeholder="State" />
+            <input
+              type="number"
+              name="zip-code"
+              id="zip-code"
+              placeholder="ZIP Code"
+            />
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Resume and Cover Letter</h3>
+          <label for="resume">
+            Resume
+            <input type="file" name="resume" id="resume" accept=".pdf" />
+          </label>
+          <label for="cover-letter">
+            Cover Letter
+            <textarea name="cover-letter" id="cover-letter"></textarea>
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Education</h3>
+          <label for="education"
+            >Highest Level of Education Attained
+            <select name="education" id="highest-education">
+              <option value="Bachelor's">Bachelor's</option>
+              <option value="Master's">Master's</option>
+              <option value="Ph.D.">Ph.D.</option>
+            </select>
+          </label>
+          <label for="name-of-school"
+            >Name of School/University
+            <input type="text" name="name-of-school" id="name-of-school" />
+          </label>
+          <label for="major"
+            >Major/Area of Study
+            <input type="text" name="major" id="major" />
+          </label>
+          <label for="graduation-year">
+            Graduation Year
+            <select name="graduation-year" id="graduation-year"></select>
+          </label>
+          <label for="employment-history"
+            >Employment History
+            <label for="student"
+              ><input
+                type="radio"
+                name="employment-history"
+                value="student"
+                id="student"
+              />Student</label
+            >
+            <label for="unemployed"
+              ><input
+                type="radio"
+                name="employment-history"
+                value="unemployed"
+                id="unemployed"
+              />Unemployed</label
+            >
+            <label for="less-than-one"
+              ><input
+                type="radio"
+                name="employment-history"
+                value="less-than-one"
+                id="less-than-one"
+              />0-1 Year of Experience</label
+            >
+            <label for="more-than-one"
+              ><input
+                type="radio"
+                name="employment-history"
+                value="more-than-one"
+                id="more-than-one"
+              />1+ Years of Experience</label
+            >
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Previous Job Titles</h3>
+          <label for="company">
+            Company Name
+            <input type="text" name="company" id="company" />
+          </label>
+          <label for="dates">
+            Employment Dates
+            <label for="start-date">
+              Start Date
+              <input type="date" name="start-date" id="start-date" />
+            </label>
+            <label for="end-date">
+              End Date
+              <input type="date" name="end-date" id="end-date" />
+            </label>
+          </label>
+          <label for="responsibilities">
+            Job Responsibilities
+            <input
+              type="text"
+              name="responsibilities"
+              id="responsibilities"
+              placeholder="Enter responsibilities..."
+            />
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Skills</h3>
+          <label for="skills">
+            Relevant Skills (e.g., programming languages, software proficiency)
+            <label for="javascript"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="javascript"
+                value="javascript"
+              />JavaScript</label
+            >
+            <label for="python"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="python"
+                value="python"
+              />Python</label
+            >
+            <label for="cpp"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="cpp"
+                value="cpp"
+              />C++</label
+            >
+            <label for="swift"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="swift"
+                value="swift"
+              />Swift</label
+            >
+            <label for="figma"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="figma"
+                value="figma"
+              />Figma</label
+            >
+            <label for="jira"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="jira"
+                value="jira"
+              />Jira</label
+            >
+            <label for="git"
+              ><input
+                type="checkbox"
+                name="skills"
+                id="git"
+                value="git"
+              />Git</label
+            >
+          </label>
+          <label for="certifications">
+            Certifications
+            <input
+              type="file"
+              name="certifications"
+              id="certifications"
+              accept=".pdf"
+            />
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Availability</h3>
+          <label for="available-date">
+            Start Date
+            <input type="date" name="available-date" id="available-date" />
+          </label>
+          <label for="relocation"
+            >Are you willing to relocate if you are offered a position?
+            <label for="yes"
+              ><input
+                type="radio"
+                name="relocation"
+                id="relocation"
+                value="yes"
+              />Yes</label
+            >
+            <label for="no"
+              ><input
+                type="radio"
+                name="relocation"
+                id="relocation"
+                value="no"
+              />No</label
+            >
+          </label>
+          <label for="time-preference">
+            What is your preferred work schedule?
+            <label for="morning"
+              ><input
+                type="radio"
+                name="time-preference"
+                id="time-preference"
+                value="morning"
+              />Morning</label
+            >
+            <label for="evening"
+              ><input
+                type="radio"
+                name="time-preference"
+                id="time-preference"
+                value="evening"
+              />Evening</label
+            >
+            <label for="night"
+              ><input
+                type="radio"
+                name="time-preference"
+                id="time-preference"
+                value="night"
+              />Night</label
+            >
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>References</h3>
+          <label for="reference-name">
+            Reference Name
+            <input type="text" name="reference-name" id="reference-name" />
+          </label>
+          <label for="reference-contact">
+            Reference Contact Information
+            <input type="tel" name="reference-contact" id="reference-contact" />
+          </label>
+          <label for="reference-relationship">
+            Relationship to Applicant
+            <select name="reference-relationship" id="reference-relationship">
+              <option value="colleague">Colleague</option>
+              <option value="friend">Friend</option>
+              <option value="family">Immediate Family</option>
+              <option value="relative">Relative</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Additional Questions</h3>
+          <label for="purpose">
+            Why do you want to work for this company?
+            <textarea name="purpose" id="purpose"></textarea>
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Consent and Agreement</h3>
+          <label for="tnc" class="tnc">
+            <input type="checkbox" name="tnc" id="tnc" value="yes" required />
+            I agree to the terms and conditions.
+          </label>
+          <label for="privacy-consent">
+            <input
+              type="checkbox"
+              id="privacy-consent"
+              name="privacy-consent"
+              value="yes"
+              required
+            />
+            I agree to the processing of my personal data as described in the
+            privacy policy and certify that the information provided in this
+            application is true and complete.
+          </label>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
